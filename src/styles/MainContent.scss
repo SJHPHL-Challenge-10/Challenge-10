@@ -25,7 +25,13 @@
       {
         width: 80%;
         height: auto;
+        cursor: pointer;
         border-radius: 1rem; 
+        &:hover
+        {
+          transform: scale(1.05);
+          transition: all ease-in-out 200;
+        }
       }
     }
 
