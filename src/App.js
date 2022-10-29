@@ -17,10 +17,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home changeState={changeState} />}></Route>
-        <Route
-          path="/judge/:judge"
-          element={<JudgeTableau judge={judge} />}
-        ></Route>
+        <Route path="/judge" element={<JudgeTableau />}></Route>
       </Routes>
     </BrowserRouter>
   );
