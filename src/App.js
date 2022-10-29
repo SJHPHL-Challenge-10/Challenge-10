@@ -10,14 +10,14 @@ function App() {
     setJudge(value);
   };
   useEffect(() => {
-    console.log(judge);
+    console.log(`Parent Says Judge is ${judge}`);
   }, [judge]);
 
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home changeState={changeState} />}></Route>
-        <Route path="/judge" element={<JudgeTableau />}></Route>
+        <Route path="/judge" element={<JudgeTableau judge={judge} />}></Route>
       </Routes>
     </BrowserRouter>
   );
