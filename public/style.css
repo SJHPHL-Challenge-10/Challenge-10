@@ -1,0 +1,23 @@
+body {
+  min-height: 100vh;
+}
+
+.mainContent {
+  background: goldenrod;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  padding: 1rem;
+}
+.mainContent__title {
+  grid-column: 1 / span 2;
+}
+.nav > ul {
+  list-style: none;
+  display: flex;
+  width: 100%;
+  gap: 3rem;
+}
+/* * {
+  border: 1px solid black;
+} */
