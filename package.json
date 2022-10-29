@@ -1,0 +1,19 @@
+{
+  "name": "challenge-10",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SJHPHL-Challenge-10/Challenge-10.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SJHPHL-Challenge-10/Challenge-10/issues"
+  },
+  "homepage": "https://github.com/SJHPHL-Challenge-10/Challenge-10#readme"
+}
