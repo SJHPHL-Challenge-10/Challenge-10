@@ -1,15 +1,24 @@
-import { Select } from '@mui/material';
-import { Tableau } from './components/Tableau';
-import TableauReport from 'tableau-react';
+import { useState, useEffect } from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
+import JudgeTableau from './components/JudgeTableau';
+import Home from './components/Home';
 function App() {
-  const parameters = {
-    'Disposing Authority': 'A. Jack Snite',
-  };
-  let url = `https://public.tableau.com/views/CourtData_16670111634290/Dashboard1?:language=en-US&publish=yes&:display_count=10&:origin=viz_share_link`;
+  const [judge, setJudge] = useState('');
+  useEffect(() => {
+    console.log(judge);
+  }, [judge]);
+
   return (
-    <div className="App">
-      <TableauReport url={url} parameters={parameters} />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home setJudge={() => setJudge()} />}></Route>
+        <Route
+          path="/judge/:judge"
+          element={<JudgeTableau judge={judge} />}
+        ></Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
