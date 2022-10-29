@@ -1,0 +1,9 @@
+GEOID,NAME,variable,estimate,moe,pop_prop
+42101,"Philadelphia County, Pennsylvania",tot_pop,1576251,,1
+42101,"Philadelphia County, Pennsylvania",nh_white,520349,2540,0.330118109362024
+42101,"Philadelphia County, Pennsylvania",nh_black,608357,10576,0.385951856652272
+42101,"Philadelphia County, Pennsylvania",nh_aian,2115,1470,0.00134179137713473
+42101,"Philadelphia County, Pennsylvania",nh_asian,117519,2606,0.0745560193141828
+42101,"Philadelphia County, Pennsylvania",nh_hawaiian,270,321,0.000171292516229966
+42101,"Philadelphia County, Pennsylvania",nh_other,13955,8539,0.00885328542218213
+42101,"Philadelphia County, Pennsylvania",hispanic,250485,,0.1589118738069
