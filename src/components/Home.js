@@ -4,7 +4,7 @@ import '../styles/home.scss';
 import MainContent from './MainContent';
 import { Select, MenuItem, InputLabel } from '@mui/material';
 
-const Home = ({ setJudge }) => {
+const Home = ({ changeState }) => {
   return (
     <div className="home">
       <section className="wrapper">
@@ -15,11 +15,11 @@ const Home = ({ setJudge }) => {
           label={'Judge'}
           placeholder={'Select A Judge'}
           onChange={(e) => {
-            setJudge(e.target.value);
-            console.log(judge);
+            changeState(e);
           }}
         >
           <MenuItem value={'A. Jack Snite'}>A. Jack Snite</MenuItem>
+          <MenuItem value={'E. Jack Snite'}>E. Jack Snite</MenuItem>
         </Select>
       </section>
     </div>
