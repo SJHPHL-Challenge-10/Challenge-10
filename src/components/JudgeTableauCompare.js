@@ -8,10 +8,10 @@ const JudgeTableauCompare = () => {
   const [judge2, setJudge2] = useState('');
   const [searchJudge, setSearchJudge] = useState(false);
 
-  //   useEffect(() => {
-  //     console.log(`Judge 1 is ${judge1}`);
-  //     console.log(`Judge 2 is ${judge2}`);
-  //   }, [judge1, judge2]);
+  useEffect(() => {
+    console.log(`Judge 1 is ${judge1}`);
+    console.log(`Judge 2 is ${judge2}`);
+  }, [judge1, judge2]);
   return (
     <>
       <section className="judge1">
