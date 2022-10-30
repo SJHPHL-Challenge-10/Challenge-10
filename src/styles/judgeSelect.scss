@@ -1,3 +1,30 @@
-.judgeSelect {
-  min-width: 16rem !important;
+@import 'config.scss';
+
+.judgeSelectCompare {
+  display: grid;
+  grid-template-columns: 1fr 1fr 0.5fr;
+  padding-inline: 3rem;
+  > button {
+    // max-width: 8rem;
+    margin: auto;
+    padding-inline: 0.5rem;
+    padding-block: 1rem;
+    border-radius: 1rem;
+    background: $accent-color;
+  }
+}
+.judgeTableauCompare {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-inline: 3.5rem;
+  > div > div > iframe {
+    width: 90% !important;
+  }
+}
+
+.judgeTableauCompare__child {
+  width: 90%;
+}
+.search__button {
+  min-width: 10rem;
 }

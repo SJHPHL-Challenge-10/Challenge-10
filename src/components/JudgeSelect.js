@@ -24,6 +24,7 @@ const JudgeSelect = () => {
         onChange={(e) => {
           setJudge(e.target.value);
           setReset(false);
+          console.log(reset);
         }}
       >
         {judges.map((judge, index) => {
