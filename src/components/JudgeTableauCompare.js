@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import JudgeTableau from './JudgeTableau';
 import { useState } from 'react';
 import { Select, MenuItem, InputLabel } from '@mui/material';
+import Header from './Header';
 
 const JudgeTableauCompare = () => {
   const [judge1, setJudge1] = useState('');
@@ -14,6 +15,7 @@ const JudgeTableauCompare = () => {
   }, [judge1, judge2]);
   return (
     <>
+      <Header />
       <section className="judge1">
         <InputLabel>Judge One</InputLabel>
         <Select

@@ -4,20 +4,20 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import JudgeTableau from './components/JudgeTableau';
 import Home from './components/Home';
 import JudgeTableauCompare from './components/JudgeTableauCompare';
-import Bail from './components/Bail';
+import JudgeSelect from './components/JudgeSelect';
+
 import BailTableau from './components/BailTableau';
-import BailSelect from './components/BailSelect';
+import Vocabulary from './components/Vocabulary';
 
 function App() {
-  const [judge, setJudge] = useState('');
-
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />}></Route>
-        <Route path="/judge" element={<JudgeTableau judge={judge} />}></Route>
+        <Route path="/judge" element={<JudgeSelect />}></Route>
         <Route path="/judgeCompare" element={<JudgeTableauCompare />}></Route>
         <Route path="/bail" element={<BailTableau />}></Route>
+        <Route path="/vocabulary" element={<Vocabulary />}></Route>
       </Routes>
     </BrowserRouter>
   );

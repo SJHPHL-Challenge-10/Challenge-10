@@ -1,46 +1,43 @@
-.header
-{
-    height: 3rem;
-    width: 100%;
+@import './config.scss';
+.header {
+  height: 3rem;
+  width: 100%;
+  display: flex;
+
+  .logo-box {
     display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 10rem;
+  }
 
-    .logo-box
-    {
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        width: 10rem;
-    }
-
-    .nav
-    {
-        display: flex;
-        width: 100%;
-        justify-content: flex-end;
-        align-items: center;
-        background-color: white;
-        margin-right: 1rem;
-        ul
-        {
-            display: flex;
-            justify-content: flex-end;
-            width: 100%;
-            li
-            {
-
-                a
-                {
-                    color: white;
-                    font-weight: bold;
-                    background-color: crimson;
-                    border-radius: 5px;
-                    display: block;
-                    width: 4rem;
-                    cursor: pointer;
-                    text-align: center;
-                }
-            }
+  .nav {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: white;
+    margin-right: 1rem;
+    ul {
+      display: grid;
+      margin-top: 0.5rem;
+      grid-template-columns: repeat(5, 1fr);
+      padding-inline: 2rem;
+      width: 100%;
+      li {
+        a {
+          color: $accent-color;
+          font-weight: bold;
+          background-color: $main-color;
+          text-decoration: none;
+          border-radius: 5px;
+          display: block;
+          width: auto;
+          padding-block: 0.5rem;
+          cursor: pointer;
+          text-align: center;
         }
+      }
     }
-
+  }
 }
