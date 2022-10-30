@@ -1,11 +1,11 @@
 .mainContent {
-  margin-top: 1rem;
-  padding: 1rem;
+  padding-inline: 1rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 1rem;
+
   .mainContent__title {
     font-size: 4rem;
+    display: inline;
   }
   .mainContent__description {
     display: flex;
