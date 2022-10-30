@@ -1,0 +1,45 @@
+.mainContent {
+  padding-inline: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  .mainContent__title {
+    font-size: 4rem;
+    display: inline;
+  }
+  .mainContent__description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    p {
+      display: block;
+      padding: 1rem;
+      font-size: 1.5rem;
+      font-weight: bold;
+      text-align: center;
+    }
+  }
+
+  .img-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 1rem;
+    img {
+      width: 80%;
+      height: auto;
+    }
+  }
+}
+.mainContent__title {
+  font-size: 2rem;
+  text-align: center;
+  grid-column: 1 / span 2;
+}
+.nav > ul {
+  list-style: none;
+  display: flex;
+  width: 100%;
+  gap: 3rem;
+}
