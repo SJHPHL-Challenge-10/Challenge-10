@@ -71,8 +71,11 @@ class PersonalSummary
   end
 
   def parse_grid header, columns
-    header = session.find('.card-header', text: header)
-    cells = header.ancestor('.card').find_all('.card-body td').map(&:text)
+    cells = session.
+      find('.card-header', text: header).
+      ancestor('.card').
+      find_all('.card-body td').
+      map(&:text)
     [].tap {|lines| lines << cells.shift(columns) while cells.any? }
   rescue Capybara::ElementNotFound
     []
