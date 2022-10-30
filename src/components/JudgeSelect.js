@@ -1,6 +1,10 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import JudgeTableau from './JudgeTableau';
+import { useState } from 'react';
+import { Select, MenuItem, InputLabel } from '@mui/material';
 
 const JudgeSelect = () => {
+  const [judge, setJudge] = useState('');
   return (
     <>
       <InputLabel id="demo-simple-select-label">Judge</InputLabel>

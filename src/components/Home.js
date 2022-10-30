@@ -6,7 +6,6 @@ import { Select, MenuItem, InputLabel } from '@mui/material';
 import JudgeTableau from './JudgeTableau';
 
 const Home = () => {
-  const [judge, setJudge] = useState('');
   return (
     <div className="home">
       <section className="wrapper">

@@ -46,7 +46,8 @@ const JudgeTableauCompare = () => {
       </section>
       <button
         onClick={() => {
-          setSearchJudge(true);
+          // How to rerender one click??
+          setSearchJudge(!searchJudge);
         }}
       >
         Click Me!
