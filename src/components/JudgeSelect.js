@@ -3,7 +3,6 @@ import JudgeTableau from './JudgeTableau';
 import { useState } from 'react';
 import { Select, MenuItem, InputLabel } from '@mui/material';
 import judges from '../helpers/judgeList';
-import Header from './Header';
 
 const JudgeSelect = ({ url }) => {
 	const [judge, setJudge] = useState('');
@@ -17,7 +16,7 @@ const JudgeSelect = ({ url }) => {
 	return (
 		<>
 			<Select
-				className="judgeSelect"
+				className="judge__select"
 				onChange={(e) => {
 					setJudge(e.target.value);
 					setReset(false);

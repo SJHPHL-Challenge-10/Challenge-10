@@ -83,12 +83,13 @@
   gap: 3rem;
 }
 
-.judgeSelectCompare {
+.judge__compare {
   display: grid;
-  grid-template-columns: 1fr 1fr 0.5fr;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
   padding-inline: 3rem;
 }
-.judgeSelectCompare > button {
+.judge__compare > button {
   margin: auto;
   padding-inline: 0.5rem;
   padding-block: 1rem;
@@ -96,24 +97,11 @@
   background: gold;
 }
 
-.judgeTableauCompare {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  padding-inline: 3.5rem;
-}
-.judgeTableauCompare > div > div > iframe {
-  width: 90% !important;
-}
-
-.judgeTableauCompare__child {
-  width: 90%;
-}
-
 .search__button {
   min-width: 10rem;
 }
 
-.judgeSelect {
+.judge__select {
   width: 10rem;
   margin-inline: 3rem;
   margin-block: 2rem;

@@ -23,11 +23,11 @@ const JudgeTableauCompare = () => {
 	return (
 		<>
 			<Header />
-			<section className="judgeSelectCompare">
-				<section className="judge1">
+			<section className="judge__compare">
+				<section className="judge__compare--child judge__compare--judge1">
 					<JudgeSelect />
 				</section>
-				<section className="judge2">
+				<section className="judge__compare--child judge__compare--judge2">
 					<JudgeSelect />
 				</section>
 			</section>
