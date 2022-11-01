@@ -113,6 +113,12 @@
   min-width: 10rem;
 }
 
+.judgeSelect {
+  width: 10rem;
+  margin-inline: 3rem;
+  margin-block: 2rem;
+}
+
 .disclaimer {
   font-size: 1.4rem;
 }

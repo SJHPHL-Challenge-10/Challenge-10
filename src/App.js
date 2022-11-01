@@ -9,21 +9,28 @@ import Methodology from './components/Methodology';
 import BailTableau from './components/BailTableau';
 import Vocabulary from './components/Vocabulary';
 import DemographicsTableau from './components/DemographicsTableau';
+import JudgePage from './components/JudgePage';
 
 function App() {
-  return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Home />}></Route>
-        <Route path="/judge" element={<JudgeSelect />}></Route>
-        <Route path="/judgeCompare" element={<JudgeTableauCompare />}></Route>
-        <Route path="/bail" element={<BailTableau />}></Route>
-        <Route path="/vocabulary" element={<Vocabulary />}></Route>
-        <Route path="/methdology" element={<Methodology />}></Route>
-        <Route path="/demographics" element={<DemographicsTableau />}></Route>
-      </Routes>
-    </BrowserRouter>
-  );
+	return (
+		<BrowserRouter>
+			<Routes>
+				<Route path="/" element={<Home />}></Route>
+				<Route path="/judge" element={<JudgePage />}></Route>
+				<Route
+					path="/judgeCompare"
+					element={<JudgeTableauCompare />}
+				></Route>
+				<Route path="/bail" element={<BailTableau />}></Route>
+				<Route path="/vocabulary" element={<Vocabulary />}></Route>
+				<Route path="/methdology" element={<Methodology />}></Route>
+				<Route
+					path="/demographics"
+					element={<DemographicsTableau />}
+				></Route>
+			</Routes>
+		</BrowserRouter>
+	);
 }
 
 export default App;
