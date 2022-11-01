@@ -6,7 +6,13 @@ const JudgeTableau = ({ judge, url }) => {
 		'Disposing Authority': judge,
 	};
 
-	return <TableauReport url={url} parameters={parameters} />;
+	return (
+		<TableauReport
+			className="tableauReport"
+			url={url}
+			parameters={parameters}
+		/>
+	);
 };
 
 export default JudgeTableau;
