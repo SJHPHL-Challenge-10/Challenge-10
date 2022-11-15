@@ -55,5 +55,5 @@ The organizations of the JAT include:
 
 * [Article on related Datathon for context](https://technical.ly/software-development/r-ladies-judge-accountability-datathon/)
 * [Judge Accountability Table - Tracking the First Judicial District of Pennsylvania](https://judgeaccountabilitytable.org/)
-* [Interactive dashboard to view judicial trends](https://awalsh.shinyapps.io/2021_datathon_dashboard/)
+* [Graphical dashboard; cases by judge](https://awalsh.shinyapps.io/2021_datathon_dashboard/)
 * [Datathon Github](https://github.com/rladiesPHL/2021_datathon)
