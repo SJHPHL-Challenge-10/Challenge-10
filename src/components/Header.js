@@ -13,7 +13,7 @@ function Header() {
 						</a>
 					</li>
 					<li>
-						<a href="/vocabulary">Vocabulary</a>
+						<a href="/methodology">Methodology</a>
 					</li>
 					<li>
 						<a href="/judge">Search Judge</a>
