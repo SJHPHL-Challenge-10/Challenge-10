@@ -1,5 +1,4 @@
 .header {
-  height: 3rem;
   width: 100%;
   display: flex;
 }
@@ -12,24 +11,24 @@
 .header .nav {
   display: flex;
   width: 100%;
-  justify-content: flex-end;
-  align-items: center;
   background-color: white;
-  margin-right: 1rem;
+  border-bottom: 2px solid black;
+  border-radius: 5px;
 }
 .header .nav ul {
   display: grid;
-  margin-top: 0.5rem;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(6, 1fr);
   padding-inline: 2rem;
   width: 100%;
 }
 .header .nav ul li a {
-  color: gold;
-  font-weight: bold;
-  background-color: #1043e8;
+  color: rgb(253, 235, 130);
+  font-size: 1.2rem;
+  font-weight: 700;
+  background-color: rgb(72, 109, 174);
   text-decoration: none;
   border-radius: 5px;
+  border: 2px solid black;
   display: block;
   width: auto;
   padding-block: 0.5rem;
@@ -37,43 +36,63 @@
   text-align: center;
 }
 
+#gavel {
+  background-color: #b9b9b9;
+  color: black;
+  border: 1px solid black;
+  width: 50%;
+  margin: auto;
+}
+
 .mainContent {
-  padding-inline: 1rem;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
 }
-.mainContent .mainContent__title {
+
+.mainContent__title {
+  font-family: "Cormorant Infant", serif;
   font-size: 4rem;
-  display: inline;
+  letter-spacing: 0.1ch;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.65);
+  border-radius: 10px;
+  padding-inline: 2rem;
+  padding-block: 1rem;
+  text-align: center;
+  margin-inline: 4rem;
+  margin-top: 2rem;
+  display: block;
 }
-.mainContent .mainContent__description {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.mainContent .mainContent__description p {
+
+.mainContent__description {
+  display: grid;
+  place-items: center;
   display: block;
   padding: 1rem;
-  font-size: 1.5rem;
-  font-weight: bold;
-  text-align: center;
+  font-size: 1.4rem;
+  text-align: left;
+  background-color: rgb(246, 239, 200);
+  line-height: 2.5rem;
+  padding-block: 2rem;
+  padding-inline: 2rem;
+  margin-top: 16rem;
+  margin-inline: 2rem;
+  border-radius: 10px;
 }
-.mainContent .img-box {
+.mainContent__description ul {
+  list-style: none;
+}
+
+.img-box {
   display: flex;
   justify-content: center;
   align-items: center;
   border: 2px solid black;
   border-radius: 1rem;
 }
-.mainContent .img-box img {
+.img-box img {
   width: 80%;
   height: auto;
-}
-
-.mainContent__title {
-  font-size: 2rem;
-  text-align: center;
-  grid-column: 1/span 2;
 }
 
 .nav > ul {
@@ -83,38 +102,143 @@
   gap: 3rem;
 }
 
-.judgeSelectCompare {
+.hero {
+  background-image: url("../images/Family_Court_Building_Philadelphia.jpg");
+  background-position: center;
+  position: absolute;
+  top: 1rem;
+  z-index: -1;
+  height: 95vh;
+}
+
+.judge__compare {
   display: grid;
-  grid-template-columns: 1fr 1fr 0.5fr;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
   padding-inline: 3rem;
 }
-.judgeSelectCompare > button {
+.judge__compare > button {
   margin: auto;
   padding-inline: 0.5rem;
   padding-block: 1rem;
   border-radius: 1rem;
-  background: gold;
-}
-
-.judgeTableauCompare {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  padding-inline: 3.5rem;
-}
-.judgeTableauCompare > div > div > iframe {
-  width: 90% !important;
-}
-
-.judgeTableauCompare__child {
-  width: 90%;
+  background: rgb(253, 235, 130);
 }
 
 .search__button {
   min-width: 10rem;
 }
 
+.judge__select {
+  width: 10rem;
+  margin-inline: 3rem;
+  margin-block: 2rem;
+}
+
+#centeringContainer {
+  color: red;
+  position: absolute;
+}
+
 .disclaimer {
   font-size: 1.4rem;
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role=list],
+ol[role=list] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  *,
+*::before,
+*::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+.methodology {
+  margin-top: 2rem;
+  padding: 1rem;
+}
+
+.methodology__title {
+  margin-bottom: 1rem;
+}
+
+.disclaimer {
+  text-indent: 3rem;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 16;
+}
+
+body,
+html {
+  font-family: "Poppins", sans-serif;
 }
 
 /*# sourceMappingURL=style.css.map */
