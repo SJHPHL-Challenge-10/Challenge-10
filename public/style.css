@@ -214,6 +214,19 @@ select {
     scroll-behavior: auto !important;
   }
 }
+.methodology {
+  margin-top: 2rem;
+  padding: 1rem;
+}
+
+.methodology__title {
+  margin-bottom: 1rem;
+}
+
+.disclaimer {
+  text-indent: 3rem;
+}
+
 body,
 html {
   font-family: "Poppins", sans-serif;
