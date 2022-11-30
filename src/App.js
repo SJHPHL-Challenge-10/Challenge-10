@@ -16,7 +16,6 @@ function App() {
 				<Route path="/judge" element={<JudgePage />}></Route>
 				<Route path="/judgeCompare" element={<JudgeTableauCompare />}></Route>
 				<Route path="/bail" element={<BailTableau />}></Route>
-				{/* <Route path="/vocabulary" element={<Vocabulary />}></Route> */}
 				<Route path="/methodology" element={<Methodology />}></Route>
 				<Route path="/demographics" element={<DemographicsTableau />}></Route>
 			</Routes>
