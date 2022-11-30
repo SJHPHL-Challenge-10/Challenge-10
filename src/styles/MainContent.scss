@@ -9,10 +9,10 @@
 	color: white;
 	background-color: black;
 	padding-inline: 2rem;
-	display: inline;
-	width: 36rem;
+	// display: inline-block;
+	// width: 36rem;
 	text-align: center;
-	margin-inline: auto;
+	margin-inline: 4rem;
 	margin-top: 3rem;
 }
 .mainContent__description {
@@ -24,7 +24,7 @@
 		font-size: 2rem;
 		font-weight: bold;
 		text-align: center;
-		background-color: rgba($accent-color, 0.8);
+		background-color: rgba($accent-color, 0.9);
 		line-height: 2.5rem;
 		padding-block: 3rem;
 		padding-inline: 2rem;
@@ -54,7 +54,8 @@
 }
 .hero {
 	background-image: url('../images/Family_Court_Building_Philadelphia.jpg');
-	filter: opacity(80%);
+	// filter: opacity(90%);
+	// filter: grayscale(100%);
 	background-position: center;
 	position: absolute;
 	top: 1rem;

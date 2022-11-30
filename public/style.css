@@ -22,9 +22,10 @@
   width: 100%;
 }
 .header .nav ul li a {
-  color: gold;
+  color: rgb(255, 215, 0);
+  font-size: 1.2rem;
   font-weight: 700;
-  background-color: rgb(16, 67, 232);
+  background-color: rgb(72, 109, 174);
   text-decoration: none;
   border-radius: 5px;
   border: 2px solid black;
@@ -33,6 +34,8 @@
   padding-block: 0.5rem;
   cursor: pointer;
   text-align: center;
+  -webkit-text-stroke: 0.5px;
+  -webkit-text-stroke-color: black;
 }
 
 #gavel {
@@ -53,10 +56,8 @@
   color: white;
   background-color: black;
   padding-inline: 2rem;
-  display: inline;
-  width: 36rem;
   text-align: center;
-  margin-inline: auto;
+  margin-inline: 4rem;
   margin-top: 3rem;
 }
 
@@ -70,7 +71,7 @@
   font-size: 2rem;
   font-weight: bold;
   text-align: center;
-  background-color: rgba(255, 215, 0, 0.8);
+  background-color: rgba(255, 215, 0, 0.9);
   line-height: 2.5rem;
   padding-block: 3rem;
   padding-inline: 2rem;
@@ -100,7 +101,6 @@
 
 .hero {
   background-image: url("../images/Family_Court_Building_Philadelphia.jpg");
-  filter: opacity(80%);
   background-position: center;
   position: absolute;
   top: 1rem;
@@ -119,7 +119,7 @@
   padding-inline: 0.5rem;
   padding-block: 1rem;
   border-radius: 1rem;
-  background: gold;
+  background: rgb(255, 215, 0);
 }
 
 .search__button {
