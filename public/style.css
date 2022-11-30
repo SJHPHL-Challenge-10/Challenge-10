@@ -12,24 +12,22 @@
 .header .nav {
   display: flex;
   width: 100%;
-  justify-content: flex-end;
-  align-items: center;
-  background-color: white;
-  margin-right: 1rem;
+  background-color: #b9b9b9;
+  border-radius: 5px;
 }
 .header .nav ul {
   display: grid;
-  margin-top: 0.5rem;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(6, 1fr);
   padding-inline: 2rem;
   width: 100%;
 }
 .header .nav ul li a {
   color: gold;
-  font-weight: bold;
-  background-color: #1043e8;
+  font-weight: 700;
+  background-color: rgb(16, 67, 232);
   text-decoration: none;
   border-radius: 5px;
+  border: 2px solid black;
   display: block;
   width: auto;
   padding-block: 0.5rem;
@@ -37,43 +35,59 @@
   text-align: center;
 }
 
+#gavel {
+  background-color: #b9b9b9;
+  color: black;
+  border: 1px solid black;
+  width: 50%;
+  margin: auto;
+}
+
 .mainContent {
-  padding-inline: 1rem;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
 }
-.mainContent .mainContent__title {
+
+.mainContent__title {
   font-size: 4rem;
+  color: white;
+  background-color: black;
+  padding-inline: 2rem;
   display: inline;
+  width: 36rem;
+  text-align: center;
+  margin-inline: auto;
 }
-.mainContent .mainContent__description {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+
+.mainContent__description {
+  display: grid;
+  place-items: center;
 }
-.mainContent .mainContent__description p {
+.mainContent__description p {
   display: block;
   padding: 1rem;
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: bold;
   text-align: center;
+  background-color: rgba(255, 215, 0, 0.8);
+  line-height: 2.5rem;
+  padding-block: 3rem;
+  padding-inline: 2rem;
+  margin-top: 14rem;
+  margin-inline: 2rem;
+  border-radius: 10px;
 }
-.mainContent .img-box {
+
+.img-box {
   display: flex;
   justify-content: center;
   align-items: center;
   border: 2px solid black;
   border-radius: 1rem;
 }
-.mainContent .img-box img {
+.img-box img {
   width: 80%;
   height: auto;
-}
-
-.mainContent__title {
-  font-size: 2rem;
-  text-align: center;
-  grid-column: 1/span 2;
 }
 
 .nav > ul {
@@ -81,6 +95,16 @@
   display: flex;
   width: 100%;
   gap: 3rem;
+}
+
+.hero {
+  background-image: url("../images/Family_Court_Building_Philadelphia.jpg");
+  filter: opacity(80%);
+  background-position: center;
+  position: absolute;
+  top: 1rem;
+  z-index: -1;
+  height: 80vh;
 }
 
 .judge__compare {
@@ -114,6 +138,11 @@
 
 .disclaimer {
   font-size: 1.4rem;
+}
+
+body,
+html {
+  font-family: "Poppins", sans-serif;
 }
 
 /*# sourceMappingURL=style.css.map */

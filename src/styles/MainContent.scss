@@ -1,45 +1,62 @@
+@import './config.scss';
 .mainContent {
-  padding-inline: 1rem;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-
-  .mainContent__title {
-    font-size: 4rem;
-    display: inline;
-  }
-  .mainContent__description {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    p {
-      display: block;
-      padding: 1rem;
-      font-size: 1.5rem;
-      font-weight: bold;
-      text-align: center;
-    }
-  }
-
-  .img-box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 2px solid black;
-    border-radius: 1rem;
-    img {
-      width: 80%;
-      height: auto;
-    }
-  }
+	// padding-inline: 1rem;
+	display: grid;
+	gap: 2rem;
 }
 .mainContent__title {
-  font-size: 2rem;
-  text-align: center;
-  grid-column: 1 / span 2;
+	font-size: 4rem;
+	color: white;
+	background-color: black;
+	padding-inline: 2rem;
+	display: inline;
+	width: 36rem;
+	text-align: center;
+	margin-inline: auto;
 }
+.mainContent__description {
+	display: grid;
+	place-items: center;
+	p {
+		display: block;
+		padding: 1rem;
+		font-size: 2rem;
+		font-weight: bold;
+		text-align: center;
+		background-color: rgba($accent-color, 0.8);
+		line-height: 2.5rem;
+		padding-block: 3rem;
+		padding-inline: 2rem;
+		margin-top: 14rem;
+		margin-inline: 2rem;
+		border-radius: 10px;
+	}
+}
+
+.img-box {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 2px solid black;
+	border-radius: 1rem;
+	img {
+		width: 80%;
+		height: auto;
+	}
+}
+
 .nav > ul {
-  list-style: none;
-  display: flex;
-  width: 100%;
-  gap: 3rem;
+	list-style: none;
+	display: flex;
+	width: 100%;
+	gap: 3rem;
+}
+.hero {
+	background-image: url('../images/Family_Court_Building_Philadelphia.jpg');
+	filter: opacity(80%);
+	background-position: center;
+	position: absolute;
+	top: 1rem;
+	z-index: -1;
+	height: 80vh;
 }
