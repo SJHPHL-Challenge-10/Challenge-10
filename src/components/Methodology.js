@@ -1,4 +1,5 @@
 import React from 'react';
+import Footer from './Footer';
 import Header from './Header';
 
 const Methodology = () => {
@@ -27,6 +28,7 @@ const Methodology = () => {
 					endorsement.
 				</p>
 			</section>
+			<Footer />
 		</>
 	);
 };

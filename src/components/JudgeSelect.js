@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import JudgeTableau from './JudgeTableau';
 import { useState } from 'react';
 import { Select, MenuItem, InputLabel } from '@mui/material';
+import Footer from './Footer';
 import judges from '../helpers/judgeList';
 
 const JudgeSelect = ({ url }) => {
@@ -15,30 +16,32 @@ const JudgeSelect = ({ url }) => {
 	}
 	return (
 		<>
-			<Select
-				className="judge__select"
-				onChange={(e) => {
-					setJudge(e.target.value);
-					setReset(false);
-				}}
-			>
-				{judges.map((judge, index) => {
-					return (
-						<MenuItem key={index} value={judge}>
-							{judge}
-						</MenuItem>
-					);
-				})}
-			</Select>
-			<button
-				onClick={() => {
-					setReset(true);
-					setJudge(false);
-				}}
-			>
-				Reset
-			</button>
-			{judge && !reset && <JudgeTableau judge={judge} url={urlToSend} />}
+			<section className="wrapper">
+				<Select
+					className="judge__select"
+					onChange={(e) => {
+						setJudge(e.target.value);
+						setReset(false);
+					}}
+				>
+					{judges.map((judge, index) => {
+						return (
+							<MenuItem key={index} value={judge}>
+								{judge}
+							</MenuItem>
+						);
+					})}
+				</Select>
+				<button
+					onClick={() => {
+						setReset(true);
+						setJudge(false);
+					}}
+				>
+					Reset
+				</button>
+				{judge && !reset && <JudgeTableau judge={judge} url={urlToSend} />}
+			</section>
 		</>
 	);
 };
