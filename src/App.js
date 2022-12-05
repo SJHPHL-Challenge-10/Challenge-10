@@ -1,12 +1,10 @@
-import { useState, useEffect } from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import BailTableau from './components/BailTableau';
+import DemographicsTableau from './components/DemographicsTableau';
 import Home from './components/Home';
+import JudgePage from './components/JudgePage';
 import JudgeTableauCompare from './components/JudgeTableauCompare';
 import Methodology from './components/Methodology';
-import BailTableau from './components/BailTableau';
-import Vocabulary from './components/Vocabulary';
-import DemographicsTableau from './components/DemographicsTableau';
-import JudgePage from './components/JudgePage';
 
 function App() {
 	return (

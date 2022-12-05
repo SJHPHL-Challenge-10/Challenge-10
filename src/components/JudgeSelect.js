@@ -1,9 +1,7 @@
-import React, { useEffect } from 'react';
-import JudgeTableau from './JudgeTableau';
-import { useState } from 'react';
-import { Select, MenuItem, InputLabel } from '@mui/material';
-import Footer from './Footer';
+import { MenuItem, Select } from '@mui/material';
+import React, { useState } from 'react';
 import judges from '../helpers/judgeList';
+import JudgeTableau from './JudgeTableau';
 
 const JudgeSelect = ({ url }) => {
 	const [judge, setJudge] = useState('');
@@ -19,9 +17,11 @@ const JudgeSelect = ({ url }) => {
 			<section className="wrapper">
 				<Select
 					className="judge__select"
+					value={judge}
+					disabled={reset}
 					onChange={(e) => {
 						setJudge(e.target.value);
-						setReset(false);
+						setReset(true);
 					}}
 				>
 					{judges.map((judge, index) => {
@@ -34,13 +34,13 @@ const JudgeSelect = ({ url }) => {
 				</Select>
 				<button
 					onClick={() => {
-						setReset(true);
+						setReset(false);
 						setJudge(false);
 					}}
 				>
 					Reset
 				</button>
-				{judge && !reset && <JudgeTableau judge={judge} url={urlToSend} />}
+				{judge && reset && <JudgeTableau judge={judge} url={urlToSend} />}
 			</section>
 		</>
 	);
